@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import connectDB from "./config/db.js"
-import contactRoutes from "./routes/contact.routes.js"
+import connectDB from "./config/db.js";
+import contactRoutes from "./routes/contact.routes.js";
 
 dotenv.config();
 
@@ -16,10 +16,13 @@ app.use(express.json());
 connectDB();
 
 // Routes
-  app.use("/contacts", contactRoutes);
+app.use("/contacts", contactRoutes);
 
+//  Run locally only
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== "production") {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
+
+export default app;
