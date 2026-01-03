@@ -1,14 +1,18 @@
-import React, { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 import CreateContact from "./components/CreateContact";
+import ContactList from "./components/ContactList";
 
 function App() {
   return (
-    <>
-      <CreateContact refresh={() => window.location.reload()} />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/create" element={<CreateContact />} />
+        <Route path="/" element={<ContactList />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
