@@ -281,7 +281,7 @@ const ContactList = () => {
                     className="p-6 hover:bg-blue-50 transition-colors duration-150"
                   >
                     <div className="flex items-start gap-4 mb-4">
-                      <div className="flex-shrink-0 h-12 w-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                      <div className="shrink-0 h-12 w-12 bg-linear-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
                         {contact.name.charAt(0).toUpperCase()}
                       </div>
                       <div className="flex-1 min-w-0">
@@ -307,7 +307,7 @@ const ContactList = () => {
                         <div className="flex items-center gap-2 text-sm">
                           <Mail
                             size={18}
-                            className="text-gray-400 flex-shrink-0"
+                            className="text-gray-400 shrink-0"
                           />
                           <span className="text-gray-700 break-all">
                             {contact.email}
@@ -318,7 +318,7 @@ const ContactList = () => {
                       <div className="flex items-center gap-2 text-sm">
                         <Phone
                           size={18}
-                          className="text-gray-400 flex-shrink-0"
+                          className="text-gray-400 shrink-0"
                         />
                         <span className="text-gray-700">{contact.phone}</span>
                       </div>
@@ -327,7 +327,7 @@ const ContactList = () => {
                         <div className="flex items-start gap-2 text-sm pt-2 border-t border-gray-100">
                           <MessageSquare
                             size={18}
-                            className="text-gray-400 flex-shrink-0 mt-0.5"
+                            className="text-gray-400 shrink-0 mt-0.5"
                           />
                           <p className="text-gray-600 leading-relaxed">
                             {contact.message}
@@ -356,7 +356,7 @@ const ContactList = () => {
         <div className="fixed inset-0 z-50 overflow-y-auto">
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm transition-opacity"
+            className="fixed inset-0 bg-black/70 bg-opacity-50 backdrop-blur-sm transition-opacity"
             onClick={closeDeleteModal}
           ></div>
 
