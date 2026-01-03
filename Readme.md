@@ -4,22 +4,22 @@ A simple Contact Management Web Application built using the MERN stack to demons
 
 ## Features
 
-✅ Contact Form with validation
-✅ Client-side error messages
-✅ Store contacts in MongoDB
-✅ Fetch and display contacts dynamically
-✅ No page reload (React state updates)
-✅ Responsive UI
+- ✅ Contact Form with validation
+- ✅ Client-side error messages
+- ✅ Store contacts in MongoDB
+- ✅ Fetch and display contacts dynamically
+- ✅ No page reload (React state updates)
+- ✅ Responsive UI
 
 Bonus Features
 
-🗑️ Delete contact
-🔄 Auto refresh after submit
-🔃 Sorting by latest contact
-♻️ Reusable components
+- 🗑️ Delete contact
+- 🔄 Auto refresh after submit
+- 🔃 Sorting by latest contact
+- ♻️ Reusable components
 
 ## Project Structure
-
+```
 contact-management-app/
 │
 ├── backend/
@@ -42,7 +42,7 @@ contact-management-app/
     │   │
     │   ├── App.jsx
     │   └── main.jsx
-
+```
 
 ## Setup Instructions
 
